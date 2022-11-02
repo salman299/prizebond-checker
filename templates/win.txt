@@ -1,0 +1,11 @@
+{# templates/win.txt #}
+
+<html>
+  <body>
+    <p>Congratulations! <b>{{ name }}</b></p>
+    <p> You won prize bond(s) of <b>Rs {{ draw }}</b> for the draw held on <b>{{date}}</b> </p>
+    {{ bond_details }}
+
+    <p>Thank You</p>
+  </body>
+</html>

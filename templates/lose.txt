@@ -1,0 +1,10 @@
+{# templates/lose.txt #}
+
+<html>
+  <body>
+    <p> Hello! <b>{{ name }}</b> </p>
+    <p> You don't won prize bond(s) of <b>Rs {{ draw }}</b> for the draw held on <b>{{date}}</b> </p>
+    
+    <p>Thank You!</p>
+  </body>
+</html>
