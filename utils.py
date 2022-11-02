@@ -2,6 +2,9 @@ from jinja2 import Environment, FileSystemLoader
 import smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import logging
+
+log = logging.getLogger(__name__)
 
 def send_mail(sender_email, sender_password, email, name, draw, date, body):
     message = MIMEMultipart("alternative")
@@ -28,6 +31,7 @@ def send_mail(sender_email, sender_password, email, name, draw, date, body):
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
         server.login(sender_email, sender_password)
+        log.info(f'sending email to {email}')
         server.sendmail(
             sender_email, email, message.as_string()
         )

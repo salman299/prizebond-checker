@@ -2,6 +2,15 @@ name: Prizebond Checker
 
 on:
   workflow_dispatch:
+    inputs:
+      year:
+        description: 'Draw Year'
+        required: false
+        default: '2022'
+      month:
+        description: 'Draw Month'
+        required: false
+        default: '11'
   schedule:
     - cron: "0 0 16,18,20 * *"
 
@@ -25,4 +34,6 @@ jobs:
       env:
         EMAIL: ${{ secrets.EMAIL }}
         PASSWORD: ${{ secrets.PASSWORD }}
+        YEAR: ${{ inputs.year }}
+        MONTH: ${{ inputs.month }}
       run: python3 ./main.py
