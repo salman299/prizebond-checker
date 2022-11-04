@@ -36,7 +36,8 @@
                 ]
             ]
         },
-        "email": "salman.khuwaja29@gmail.com"
+        "email": "salman.khuwaja29@gmail.com",
+        "cc": ["aliaman.larrai@gmail.com"]
     },
     "Aman": {
         "bonds": {
@@ -61,7 +62,8 @@
                 ]
             ]
         },
-        "email": "salman.khuwaja29@gmail.com"
+        "email": "salman.khuwaja29@gmail.com",
+        "cc": ["aliaman.larrai@gmail.com"]
     },
     "Naveeda": {
         "bonds": {
@@ -76,7 +78,8 @@
                 ]
             ]
         },
-        "email": "salman.khuwaja29@gmail.com"
+        "email": "salman.khuwaja29@gmail.com",
+        "cc": ["aliaman.larrai@gmail.com"]
     },
     "Ali Muhammad": {
         "bonds": {
@@ -87,7 +90,8 @@
                 ]
             ]
         },
-        "email": "alimuhammadjafrani673@gmail.com"
+        "email": "alimuhammadjafrani673@gmail.com",
+        "cc": ["aliaman.larrai@gmail.com"]
     },
     "Almas": {
         "bonds": {
@@ -109,7 +113,8 @@
                 ]
             ]
         },
-        "email": "alimuhammadjafrani673@gmail.com"
+        "email": "alimuhammadjafrani673@gmail.com",
+        "cc": []
     },
     "Ammar": {
         "bonds": {
@@ -120,7 +125,8 @@
                 ]
             ]
         },
-        "email": "alimuhammadjafrani673@gmail.com"
+        "email": "alimuhammadjafrani673@gmail.com",
+        "cc": []
     },
     "Fozia": {
         "bonds": {
@@ -163,6 +169,7 @@
                 ]
             ]
         },
-        "email": "alimuhammadjafrani673@gmail.com"
+        "email": "alimuhammadjafrani673@gmail.com",
+        "cc": []
     }
 }
