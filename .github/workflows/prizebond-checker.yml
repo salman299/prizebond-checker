@@ -36,4 +36,4 @@ jobs:
         PASSWORD: ${{ secrets.PASSWORD }}
         YEAR: ${{ inputs.year }}
         MONTH: ${{ inputs.month }}
-      run: python3 ./main.py --info --send-mail
+      run: python3 ./main.py --info --send-email
