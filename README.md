@@ -7,7 +7,7 @@ One of the problems which I usually encountered was checking prize bonds after e
 Add your prize bond data into the `sample.json` file and select the pull request option when committing your changes to the `master` branch or if you are not a tech guy simply email your numbers at `salman.khwaja29@gmail.com` and I will add your numbers to the repository. 
 **The Prizebond data should look like this**
 
-```json
+```
 {
 	<your_name>: {
 		"bonds": {
