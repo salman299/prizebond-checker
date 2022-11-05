@@ -77,7 +77,7 @@ def get_parser():
         '-y',
         '--year',
         type=int,
-        choices=(2000, datetime.now().year),
+        choices=range(2000, datetime.now().year),
         default=datetime.now().year,
         help='Year to search prizebond'
     )
