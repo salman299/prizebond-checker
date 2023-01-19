@@ -13,6 +13,10 @@
                 [
                     252401,
                     252500
+                ],
+                [
+                    911001,
+                    911500
                 ]
             ],
             "750": [
@@ -102,7 +106,8 @@
                 ]
             ]
         },
-        "email": "alimuhammadjafrani673@gmail.com"
+        "email": "alimuhammadjafrani673@gmail.com",
+        "cc": ["aliaman.larrai@gmail.com"]
     },
     "Mashal": {
         "bonds": {
@@ -114,7 +119,7 @@
             ]
         },
         "email": "alimuhammadjafrani673@gmail.com",
-        "cc": []
+        "cc": ["aliaman.larrai@gmail.com"]
     },
     "Ammar": {
         "bonds": {
@@ -126,7 +131,7 @@
             ]
         },
         "email": "alimuhammadjafrani673@gmail.com",
-        "cc": []
+        "cc": ["aliaman.larrai@gmail.com"]
     },
     "Fozia": {
         "bonds": {
@@ -170,6 +175,6 @@
             ]
         },
         "email": "alimuhammadjafrani673@gmail.com",
-        "cc": []
+        "cc": ["aliaman.larrai@gmail.com"]
     }
 }
