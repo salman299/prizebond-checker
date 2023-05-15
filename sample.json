@@ -85,6 +85,18 @@
         "email": "salman.khuwaja29@gmail.com",
         "cc": ["aliaman.larrai@gmail.com"]
     },
+    "Nazish": {
+        "bonds": {
+            "1500": [
+                [
+                    298301,
+                    298371
+                ]
+            ]
+        },
+        "email": "salman.khuwaja29@gmail.com",
+        "cc": ["aliaman.larrai@gmail.com"]
+    },
     "Ali Muhammad": {
         "bonds": {
             "1500": [
@@ -103,6 +115,10 @@
                 [
                     856001,
                     856016
+                ],
+                [
+                    298372,
+                    298375
                 ]
             ]
         },
@@ -171,6 +187,10 @@
                 [
                     259801,
                     259830
+                ],
+                [
+                    298376,
+                    298400
                 ]
             ]
         },
