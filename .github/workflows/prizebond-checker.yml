@@ -6,11 +6,11 @@ on:
       year:
         description: 'Draw Year'
         required: false
-        default: '2022'
+        default: '2023'
       month:
         description: 'Draw Month'
         required: false
-        default: '11'
+        default: '06'
   schedule:
     - cron: "0 0 16,18,20 * *"
 
@@ -30,10 +30,14 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     
+    - name: Get Current Year and Month
+      id: date
+      run: echo "::set-output name=year::$(date +'%Y')\n::set-output name=month::$(date +'%m')"
+    
     - name: Check Prizebond
       env:
         EMAIL: ${{ secrets.EMAIL }}
         PASSWORD: ${{ secrets.PASSWORD }}
-        YEAR: ${{ inputs.year }}
-        MONTH: ${{ inputs.month }}
+        YEAR: ${{ inputs.year || steps.date.outputs.year }}
+        MONTH: ${{ inputs.month || steps.date.outputs.month }}
       run: python3 ./main.py --info --send-email
