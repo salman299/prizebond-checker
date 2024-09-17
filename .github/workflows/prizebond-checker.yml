@@ -32,12 +32,15 @@ jobs:
     
     - name: Get Current Year and Month
       id: date
-      run: echo "::set-output name=year::$(date +'%Y')\n::set-output name=month::$(date +'%m')"
-    
+      run: |
+        echo "year=$(date +'%Y')" >> $GITHUB_OUTPUT
+        echo "month=$(date +'%m')" >> $GITHUB_OUTPUT
+
     - name: Check Prizebond
       env:
         EMAIL: ${{ secrets.EMAIL }}
         PASSWORD: ${{ secrets.PASSWORD }}
+        JSON_FILE_URL: ${{ secrets.JSON_FILE_URL }}
         YEAR: ${{ inputs.year || steps.date.outputs.year }}
         MONTH: ${{ inputs.month || steps.date.outputs.month }}
       run: python3 ./main.py --info --send-email
